@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-container {
@@ -82,4 +87,142 @@ body {
     color: #F9FAF8;
     font-weight: 800;
     border: none;
+    margin-top: 10px;
+}
+
+.random-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.random-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+.tile {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    color: gray;
+    width: 150px;
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quote-container {
+    background-color: #e5e7eb ;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 60px 80px;
+}
+
+.quote-section {
+    font-size: 36px;
+    font-style: italic;
+    color:#1F2937;
+}
+
+.quote-author {
+    display:flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    color:#1F2937;
+}
+
+.quote-section p{
+    margin: 0;
+    padding: 0;
+}
+
+.quote-author p{
+    padding:0;
+    margin: 0;
+}
+
+.action-container {
+    display: flex;
+    margin: 50px 80px;
+    background-color: #3882F6;
+    border-radius: 6px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-action-container,
+.right-action-container button{
+    color:#E5E7EB;
+}
+
+.right-action-container button {
+    background-color: #3882F6;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+/* .left-action-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.left-action-container h1, p {
+    margin:0;
+    padding: 0;
+}
+
+.left-action-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+.left-action-container h1 {
+    font-size: 20px;
+}
+
+.left-action-container p {
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 30px;
 }
